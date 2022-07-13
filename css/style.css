@@ -69,6 +69,23 @@ nav .menu li a.active{
 	color: #fff;
 }
 
+.github-nav a{
+	padding: 1rem;
+	background-color: #000;
+	font-size: 1.4em;
+	transition: .3s;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.github-nav a:hover{
+	background-color: #222;
+}
+
 /* NAV FİNİSH */
 
 .home{
@@ -477,6 +494,12 @@ footer{
 	.meet .cards{
 		grid-template-columns: auto;
 	}
+	nav .menu{
+		display: none;
+	}
+	nav .container{
+		justify-content: center;
+	}
 }
 
 @media screen and (max-width: 575px) {
@@ -496,12 +519,6 @@ footer{
 	}
 	.home .home-text p{
 		width: auto;
-	}
-	nav .menu{
-		display: none;
-	}
-	nav .container{
-		justify-content: center;
 	}
 }
 
