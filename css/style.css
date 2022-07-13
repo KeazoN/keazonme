@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* #080C25 #5B53E1 #ffff #A6B2EC  */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 1em;
+	color: #fff;
+}
+
+textarea{
+	resize: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+	background-color: #1A172C;
+	overflow-x: hidden;
+}
+
+.container{
+	max-width: 960px;
+	margin: auto auto;
+	padding: 0 1rem;
+}
+
+nav{
+	padding: 1rem;
+}
+
+nav .container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav .logo img{
+	width: 55px;
+	height: auto;
+	transition: .1s;
+}
+
+nav .menu{
+	display: flex;
+	align-items: center;
+}
+
+nav .menu li{
+	list-style-type: none;
+	margin-left: 30px;
+}
+
+nav .menu li a{
+	color: rgba(255, 255, 255, 0.5);
+	font-weight: 600;
+	transition: 50ms;
+}
+
+nav .menu li a:hover{
+	color: #fff;
+}
+
+nav .menu li a.active{
+	color: #fff;
+}
+
+/* NAV FİNİSH */
+
+.home{
+	padding-top: 5rem;
+}
+
+.home .container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 5rem;
+}
+
+.home .home-picture img{
+	width: 280px;
+	height: auto;
+	border-radius: 50%;
+	border: 6px solid #5B53E1;
+}
+
+.home .home-text h1{
+	text-transform: uppercase;
+	font-size: 3.6em;
+}
+
+.home-text-color{
+	color: #5B53E1;
+}
+
+.home .home-text p{
+	color: rgba(255, 255, 225, 0.5);
+	font-weight: 400;
+	margin-top: 1rem;
+	font-size: 1em;
+	margin-bottom: 1.5rem;
+	margin-top: 1rem;
+}
+
+.spotify-listening a{
+	padding: 0.5rem 1.5rem;
+	border-radius: 8px;
+	background-color: #1DB954;
+	font-weight: 500;
+}
+
+/* Home Finish */
+
+.meet {
+	padding-top: 7rem;
+}
+
+.meet .cards{
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 30px;
+}
+
+.meet .card{
+	height: 100%;
+	padding: 2rem;
+	border-radius: 8px;
+	background-color: #2d2030;
+}
+
+.card:hover{
+	background-color: #2d2435;
+}
+
+.meet-title{
+	text-transform: uppercase;
+	font-size: 1.1em;
+}
+
+.meet-desc{
+	font-weight: 400;
+	color: rgba(255,255,255,0.5);
+	margin-top: 1rem;
+}
+
+/* MY FINISH */
+
+.project{
+	padding-top: 5rem;
+}
+
+.content-title h1{
+	text-transform: uppercase;
+	font-size: 2.2em;
+	padding: 1rem 0;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.project .cards{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding-top: 2rem;
+	gap: 12px;
+}
+
+.project .card{
+	width: 300px;
+	background-color: #2d2030;
+	border-radius: 8px;
+	position: relative;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.project .card-banner{
+	width: 100%;
+	height: 28%;
+	position: absolute;
+}
+
+.card-banner img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.banner-effect{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(180deg, rgba(45,32,48,0) 0%, rgba(45,32,48,1) 80%);
+	width: 100%;
+	height: 100%;
+}
+
+.project .card-content{
+	padding: 1rem;
+	margin-top: 1rem;
+	position: relative;
+}
+
+.card-logo img{
+	width: 5rem;
+	height: 5rem;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.card-title h1{
+	font-size: 1.5em;
+	color: #fff;
+	margin-top: 0.5rem;
+}
+
+.card-desc p{
+	color: rgba(255, 255, 255, 0.5);
+	font-weight: 400;
+	margin-top: 1rem;
+	font-size: 0.850em;
+	margin-bottom: 1.5rem;
+	height: 100px;
+}
+
+.card-buttons{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card-buttons a{
+	padding: 0.5rem 0.8rem;
+	background-color: #5B53E1;
+	border-radius: 8px;
+	transition: .1s;
+	font-weight: 500;
+	font-size: 0.8em;
+}
+
+.card-buttons a:hover{
+	background-color: #4B42E1;
+}
+
+/* PROJECTS FINISH */
+
+.skills{
+	padding-top: 5rem;
+}
+
+.keazon-skills{
+	padding-top: 1rem;
+	display: grid;
+	width: 100%;
+	grid-template-columns: auto auto auto;
+	gap: 5px;
+}
+
+.keazon-skills a{
+	padding: 1rem;
+	background-color: #2d2030;
+	transition: .1s;
+}
+
+.keazon-skills a:hover{
+	background-color: #2d2035;
+}
+
+/* SKILLS FINISH */
+
+.contact{
+	padding-top: 5rem;
+}
+
+.contact-content{
+	padding-top: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nameLast{
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 15px;
+}
+
+.name, .lastName, .email, .subject{
+	display: flex;
+	flex-direction: column;
+}
+
+.name, .lastName, .email, .subject{
+	margin-top: 1rem;
+}
+
+.contact label{
+	margin-bottom: 0.7rem;
+}
+
+.required{
+	color: red;
+}
+
+.contact input[type="text"], .contact input[type="email"], .contact textarea{
+	padding: 1rem;
+	color: #fff;
+	background-color: #2d2030;
+	border: none;
+	outline: none;
+	border-radius: 8px;
+	transition: .1s;
+}
+
+.contact input[type="text"]:hover, .contact input[type="email"]:hover, .contact textarea:hover{
+	background-color: #2d2032;
+}
+
+.contact input[type="text"]:focus, .contact input[type="email"]:focus, .contact textarea:focus{
+	background-color: #2d2035;
+}
+
+.contact textarea{
+	width: 100%;
+	height: 150px;
+}
+
+.contact .submit button{
+	margin-top: 1.2rem;
+	padding: 0.6rem;
+	width: 100%;
+	background-color: #5B53E1;
+	border: none;
+	outline: none;
+	font-weight: 600;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.contact .submit button:hover{
+	background-color: #4B42E1;
+}
+
+form{
+	z-index: 50;
+}
+
+.cats-svg{
+	position: relative;
+	z-index: 1;
+	pointer-events: none;
+}
+
+.cats{
+	position: absolute;
+	bottom: -13.8rem;
+	right: -21rem;
+	pointer-events: none;
+}
+
+.cats img{
+	width: 52rem;
+	height: auto;
+	pointer-events: none;
+}
+
+/* FORM FINISH */
+
+.social-media{ 
+	margin-top: 5rem;
+	padding: 1rem;
+	background-color: #2d2030;
+}
+
+.social-media .container{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.icons{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+}
+
+.icons a{
+	padding: 1rem;
+	font-size: 1.5em;
+}
+
+.icons a i{
+	transition: .3s;
+}
+
+.icons a:hover i{
+	color: #5B53E1;
+}
+
+footer{
+	margin-top: 1rem;
+}
+
+@media screen and (max-width: 1260px) {
+	.cats{
+		right: -16rem;
+	}
+
+	.cats img{
+		width: 47rem;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 1135px) {
+	.cats{
+		bottom: -10rem;
+		right: -7rem;
+	}
+
+	.cats img{
+		width: 37rem;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 990px) {
+	.project .cards{
+		display: flex;
+		flex-direction: column;
+		align-items: center;		
+		justify-content: center;
+	}
+	.project .card{
+		width: 100%;
+	}
+	.project .card-banner{
+		height: 50%;
+	}
+}
+
+@media screen and (max-width: 920px) {
+	.cats{
+		display: none;
+	}
+	.contact-content{
+		align-items: center;
+		justify-content: center;
+	}
+	.icons{
+		gap: 20px;
+	}
+	.home .container{
+		flex-direction: column-reverse;
+		gap: 2rem;
+	}
+	.home .home-text{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+	.home .home-text h1{
+		font-size: 3em;
+	}
+	.home .home-text p{
+		width: 550px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.meet .cards{
+		grid-template-columns: auto;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.icons{
+		gap: 15px;
+	}
+	.icons a{
+		padding: 0;
+	}
+	.nameLast{
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+	}
+	.contact-content form{
+		width: 100%;
+	}
+	.home .home-text p{
+		width: auto;
+	}
+	nav .menu{
+		display: none;
+	}
+	nav .container{
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 510px) {
+	.keazon-skills{
+		grid-template-columns: auto auto;
+	}
+	.home .home-text h1{
+		font-size: 2.3em;
+	}
+	.home .home-text p{
+		font-size: 0.8em;
+	}
+	.home{
+		padding-top: 3rem;
+	}
+}
+
+@media screen and (max-width: 415px) {
+	.keazon-skills{
+		grid-template-columns: auto;
+	}
+}
