@@ -8,6 +8,7 @@
 	    <meta name="title" content="KeazoN | Brand Of The Future">
 	    <meta name="description" content="We will be at your service very soon with legendary innovations and legendary projects. Towards the future with KeazoN.">
 	    <meta name="keywords" content="keazon, keazon logo, keazon nedir?, keazon nerde?, what is keazon, keazon uğur mercan, uğur, mercan, uğur mercan, uğur mercan kimdir, keazon nedir ve nasıl kullanılır, keazon ne, keazon napıyor, keazon ne yapıyor, keazon gelecek ile ne alakası var, keazon logo png, keazon logo kalp, keazon brand of the future, brand of the future, brand, of, the, future">
+	    <meta name="robots" content="index, follow">
 	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	    <meta name="author" content="Uğur Mercan">
 	    <title>KeazoN | Brand Of The Future</title>
@@ -171,15 +172,15 @@
 					<div class="container">
 						<div class="content-title"><h1>Contact</h1></div>
 						<div class="contact-content">
-							<form>
+							<form id="formMail" action="">
 								<div class="nameLast">
 									<div class="name">
 										<label for="name">Name <span class="required">*</span></label>
-								        <input type="text" class="name" name="name-input" placeholder="Name" required>
+								        <input type="text" class="name-input" name="name" placeholder="Name" required>
 									</div>
 									<div class="lastName">
 										<label for="lastName">Last Name <span class="required">*</span></label>
-										<input type="text" class="lastName" name="lastName-input" placeholder="Last Name" required>
+										<input type="text" class="lastName-input" name="lastName" placeholder="Last Name" required>
 									</div>
 								</div>
 								<div class="email">
@@ -191,7 +192,7 @@
 									<textarea name="subject" class="subject-textarea" placeholder="You can consult me on any topic or make a joke."></textarea>
 								</div>
 								<div class="submit">
-									<button type="submit"><i class="fa fa-planed"></i> Send (Not Working)</button>
+									<input type="submit" value="Send">
 								</div>
 							</form>
 							<div class="cats-svg">
@@ -219,7 +220,21 @@
 						</footer>
 					</div>
 			</section>
-		</div>		
+			<div class="mail-verify">
+				<div class="modal-effect"></div>
+				<div class="container">
+					<div class="verify">
+						<div class="verify-content">
+							<i class="far fa-check-circle"></i>
+							<h1>Succesful!</h1>
+							<a href="#" onClick="modalClose()"><i class="fa fa-x"></i> Close</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	    <script src="https://smtpjs.com/v3/smtp.js"></script>
+	    <script src="js/jquery-3.6.0.min.js"></script>
 		<script src="js/index.js"></script>
 	</body>
 </html>
