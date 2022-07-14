@@ -488,6 +488,7 @@ footer{
 	background-color: red;
 	border-radius: 8px;
 	transition: .1s;
+	cursor: pointer;
 }
 
 .verify-content a:hover{
@@ -512,8 +513,6 @@ footer{
 	z-index: 5555;
 }
 
-.mail-verify .verify{
-}
 
 @media screen and (max-width: 1260px) {
 	.cats{
